@@ -3,3 +3,9 @@ https://bosch.sharepoint.com/:p:/r/sites/msteams_7611909/_layouts/15/Doc.aspx?so
 
 C++_Project_Setup_with_CMake.mp4
 <https://bosch.sharepoint.com/:v:/r/sites/msteams_7611909/Shared Documents/General/Fresher Training Materials/C++_Project_Setup_with_CMake.mp4?csf=1&web=1&e=EpOaOJ>>
+
+https://bosch-bgsv.udemy.com/course/beginning-c-plus-plus-programming/learn/lecture/9535630#overview
+
+https://bosch-bgsv.udemy.com/course/master_cmake/learn/lecture/17991435#overview
+
+https://bosch-bgsv.udemy.com/course/advance-programming-concepts/learn/lecture/12758365#overview
