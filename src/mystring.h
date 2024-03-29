@@ -50,5 +50,7 @@ class MyString{
             source.size = 0;
             return *this;
         }
-        MyString operator++()
+        MyString operator++(int){
+            
+        }
 };
