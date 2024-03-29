@@ -1,8 +1,24 @@
 #include "mystring.h"
 
-MyString::MyString(char* str,size_t size) : str{str},size{strlen(str)}{}
+MyString::MyString(char* str){
+    if (str == NULL){
+        this->str = NULL;
+        this->size = 0;
+        return;
+    }
+    size_t size = strlen(str);
+    char* buff = new char[size];
+    strcpy(buff, str);
+    this->str = buff;
+    this->size = size;
+}
 
 MyString::MyString(const MyString& source){
+    if (source.str == NULL){
+        this->str = NULL;
+        this->size = 0;
+        return;
+    }
     char* buff = new char[size+1];
     strcpy(buff,source.str);
     delete [] this->str;
@@ -16,6 +32,10 @@ MyString::MyString(MyString&& source){
     source.size = 0;
 }
 MyString::~MyString(){
+    if(this->str == NULL){
+        cout << "Delete NULL string" << endl;
+        return;
+    }
     cout << "Delete :";
     for (char* i = str; i < str+size ;i ++){
         cout << *i;
@@ -47,12 +67,9 @@ MyString& MyString::operator=(MyString&& source){
 }
 
 MyString& MyString::operator++(){
-    char* buff = new char[this->size+1];
     for (int i = 0; i<size; i++){
-        buff[i] = toupper(this->str[i]);
+        this->str[i] = toupper(this->str[i]);
     }
-    delete[] this->str;
-    this->str = buff;
     return *this;
 }
 void MyString::print(){

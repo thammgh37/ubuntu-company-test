@@ -5,9 +5,9 @@
 class MyString{
     private:
         char* str;
-        int size;
+        size_t size;
     public:
-        MyString(char* str = NULL,size_t size = 0);
+        MyString(char* str = NULL);
         MyString(const MyString& source);
         MyString(MyString&& source);
         ~MyString();
